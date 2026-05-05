@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+p {
+  font-size: var(--fontSizeMedium);
+}
+
+h1 {
+  margin-bottom: 0.25rem;
+  font-size: var(--fontSizeExtraLarge);
+}
+
+input,
+textarea,
+button,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  min-height: 100%;
+  background-color: var(--backgroundColor);
+}
+
+:root {
+  --primaryColor: #A8DF8E;
+  --secondaryColor: #FFD8DF;
+  --accentColor: #FFAAB8;
+  --altTextColor: #FFFFFF;
+  --backgroundColor: #F0FFDF;
+
+  /* Min: 320px Max: 1200px */
+  --fontSizeExtraSmall: clamp(0.875rem, 0.6932rem + 0.9091vw, 1.375rem); /* 14 - 22px */ 
+  --fontSizeSmall: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem); /* 16 - 24px */
+  --fontSizeMedium: clamp(1.125rem, 0.9432rem + 0.9091vw, 1.625rem); /* 18 - 26px */
+  --fontSizeLarge: clamp(1.5625rem, 1.3807rem + 0.9091vw, 2.0625rem); /* 25 - 33px */
+  --fontSizeExtraLarge: clamp(2rem, 1.8182rem + 0.9091vw, 2.5rem); /* 32 - 40px */
+}
+
+/*Tablet*/
+@media (min-width: 650px) {
+  body {
+
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+  body {
+
+  }
+}
