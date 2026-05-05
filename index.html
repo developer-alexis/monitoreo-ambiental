@@ -13,16 +13,35 @@
 
 <body>
   <header>
-    <p style="font-size: var(--fontSizeLarge);">Monitoreo ambiental</p>
+    <div class="page-logo">
+      <img src="images/planet-earth.png" alt="logo">
+      <p>Monitoreo ambiental</p>
+    </div>
+    <button>
+      Vincular dispositivo
+    </button>
   </header>
+
   <main>
-    <h1>Hello</h1>
-    <p style="font-size: var(--fontSizeExtraSmall)">Welcome to my page!</p>
-    <p style="font-size: var(--fontSizeSmall)">Welcome to my page!</p>
-    <p style="font-size: var(--fontSizeMedium)">Welcome to my page!</p>
-    <p style="font-size: var(--fontSizeLarge)">Welcome to my page!</p>
-    <p style="font-size: var(--fontSizeExtraLarge)">Welcome to my page!</p>
+    <div class="readings">
+      <div id="temperature">
+        <p>Temperatura</p>
+        <img src="images/thermometer.png" alt="Temperature">
+        <p>50º C</p>
+      </div>
+      <div id="humidity">
+        <p>Humedad</p>
+        <img src="images/humidity.png" alt="Humidity">
+        <p>60%</p>
+      </div>
+      <div id="air-quality">
+        <p>Calidad de aire</p>
+        <img src="images/wind.png" alt="Air quality">
+        <p>22.5 µg/m³</p>
+      </div>
+    </div>
   </main>
+
   <footer>
     <p style="font-size: var(--fontSizeExtraSmall);">&copy; Alexis Fuentes 2026</p>
   </footer>

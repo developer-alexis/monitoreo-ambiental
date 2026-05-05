@@ -12,3 +12,38 @@ header {
   background-color: var(--primaryColor);
   z-index: 1000;
 }
+
+.page-logo {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.page-logo p {
+  font-size: var(--fontSizeLarge);
+}
+
+.page-logo img {
+  height: 75%;
+}
+
+header button {
+  background-color: var(--secondaryColor);
+  border: solid 1px black;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px black;
+  transition: filter 0.18s, transform 0.07s, box-shadow 0.07s;
+}
+
+header button:hover {
+  filter: brightness(1.1);
+}
+
+header button:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
