@@ -3,6 +3,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 30px;
 }
 
 .readings {
@@ -36,4 +37,42 @@ main {
   font-size: var(--fontSizeExtraSmall);
   font-weight: 600;
   overflow-wrap: break-word;
+}
+
+.environment-report {
+  width: 90%;
+  max-width: 900px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 3px 3px 5px rgb(170, 170, 170);
+  transition: transform 0.3s ease;
+}
+
+.environment-report:hover {
+  transform: scale(1.03);
+}
+
+.environment-report h1, h2 {
+  text-align: center;
+}
+
+.environment-report h2 {
+  font-size: var(--fontSizeSmall);
+}
+
+.environment-report div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 1px dotted black;
+  margin: 0px 10px 3px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
 }
